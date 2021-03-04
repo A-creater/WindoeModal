@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Модальное окно</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="modal-overlay" id="modal-overlay"></div>
+
+	<div class="modal" id="modal" aria-hidden="true" aria-labelledby="modalTitle" aria-describedby="modalDescription"
+		role="dialog">
+
+		<div class="modal-guts" role="document">
+			<h1>Форма ввода</h1>
+
+			<form action="">
+				<input class="input__surname" type="text" placeholder="Фамилия">
+				<input class="input__name" type="text" placeholder="Имя">
+				<input class="input__mail" type="email" placeholder="e-mail">
+				<button class="button__save">Соранить</button>
+			</form>
+		</div>
+	</div>
+	<p id="demo"></p>
+	<button id="open-button" class="open-button">Открыть окно</button>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
